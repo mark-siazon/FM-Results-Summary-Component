@@ -5,7 +5,7 @@ section.results{
     @include font-styles(.95rem, 700, $pale-blue, 0.6);
 
     @include respond-to(large){
-      font-size: 1.1rem;
+      font-size: 1.25rem;
     }
   
   }
@@ -20,10 +20,6 @@ div.analysis{
   p:first-child{
     @include font-styles(2.125rem, 600, $white, 1);
     @extend %text-center;
-
-    @include respond-to(large){
-      font-size: 1.75rem;
-    }
   }
 
   p:last-child{
@@ -32,7 +28,7 @@ div.analysis{
     letter-spacing: 0.54px;
 
     @include respond-to(large){
-      font-size: .9rem;
+      font-size: 1.15rem;
       opacity: 0.55;
     }
   }
@@ -50,8 +46,8 @@ section.summary{
 }
 
 div.percentage{
-  b { @include font-styles(0.9rem, 700, $dark-gray-blue, 1); }
-  span { @include font-styles(0.9rem, 700, #A5A5A5, 0.8); }
+  b { @include font-styles(1rem, 700, $dark-gray-blue, 1); }
+  span { @include font-styles(1rem, 700, #A5A5A5, 0.8); }
 }
 
 button[type="button"]{ font-size: 0.9rem; }
