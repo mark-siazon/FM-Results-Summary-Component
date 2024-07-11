@@ -42,7 +42,7 @@ section.results > p {
 }
 @media only screen and (min-width: 768px) {
   section.results > p {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -65,11 +65,6 @@ div.analysis p:first-child {
   color: hsl(0, 0%, 100%);
   opacity: 1;
 }
-@media only screen and (min-width: 768px) {
-  div.analysis p:first-child {
-    font-size: 1.75rem;
-  }
-}
 div.analysis p:last-child {
   font-size: 1rem;
   font-weight: 400;
@@ -79,7 +74,7 @@ div.analysis p:last-child {
 }
 @media only screen and (min-width: 768px) {
   div.analysis p:last-child {
-    font-size: 0.9rem;
+    font-size: 1.15rem;
     opacity: 0.55;
   }
 }
@@ -98,13 +93,13 @@ section.summary p:first-child {
 }
 
 div.percentage b {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   color: hsl(224, 30%, 27%);
   opacity: 1;
 }
 div.percentage span {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #A5A5A5;
   opacity: 0.8;
@@ -190,6 +185,7 @@ section.results {
     max-width: 364px;
     height: 515px;
     border-radius: 35px;
+    padding-top: 0;
   }
 }
 section.results div.circle {
@@ -204,7 +200,8 @@ section.results div.circle {
 }
 @media only screen and (min-width: 768px) {
   section.results div.circle {
-    scale: 1.05;
+    scale: 1.25;
+    margin: 20px 0 15px;
   }
 }
 section.results div.analysis {
