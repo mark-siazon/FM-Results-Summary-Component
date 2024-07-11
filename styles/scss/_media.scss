@@ -20,8 +20,8 @@ $breakpoint-lg: 1024px;
   }
 
   @else if ($breakpoint == large) {
-    // If the viewport width is greater than or equal to 1024px.
-    @media only screen and (min-width: #{$breakpoint-lg}) {
+    // If the viewport width is greater than or equal to 768px.
+    @media only screen and (min-width: #{$breakpoint-md}) {
       @content;
     }
   }

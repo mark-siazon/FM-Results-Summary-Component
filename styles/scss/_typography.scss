@@ -1,37 +1,57 @@
 section.results{
   @extend %text-center;
   color: rgba($color: $white, $alpha: 1.0);
-  > p { @include font-styles(.95rem, 700, #f5ffeb, 0.6) }
+  > p {
+    @include font-styles(.95rem, 700, $pale-blue, 0.6);
+
+    @include respond-to(large){
+      font-size: 1.1rem;
+    }
+  
+  }
 }
 
 div.circle{
-  p:first-child{ @include font-styles(3.375rem, 600, $white); }
-  p:last-child{ @include font-styles(0.95rem, 600, #F9F0FF, 0.3);}
+  p:first-child{ @include font-styles(3.375rem, 600,$pale-blue); }
+  p:last-child{ @include font-styles(0.95rem, 600, $light-lavender, 0.4);}
 }
 
 div.analysis{
   p:first-child{
     @include font-styles(2.125rem, 600, $white, 1);
     @extend %text-center;
+
+    @include respond-to(large){
+      font-size: 1.75rem;
+    }
   }
 
   p:last-child{
-    @include font-styles(1rem, 600, $white, 0.65);
+    @include font-styles(1rem, 400, $white, 0.65);
     @extend %text-center;
     letter-spacing: 0.54px;
+
+    @include respond-to(large){
+      font-size: .9rem;
+      opacity: 0.55;
+    }
   }
 }
 
 section.summary{
   p:first-child{
-    @include font-styles(1rem, 700, #353541, 1);
+    @include font-styles(1rem, 700, $dark-gray-blue, 1);
     text-align: left;
+
+    @include respond-to(large){
+      font-size: 1.25rem;
+    }
   }  
 }
 
 div.percentage{
-  b { @include font-styles(0.9rem, 700, #353541, 1); }
-  span { @include font-styles(0.9rem, 700, #A5A5A5, 1); }
+  b { @include font-styles(0.9rem, 700, $dark-gray-blue, 1); }
+  span { @include font-styles(0.9rem, 700, #A5A5A5, 0.8); }
 }
 
 button[type="button"]{ font-size: 0.9rem; }

@@ -1,3 +1,5 @@
+@import '_media.scss';
+
 *{
   margin: 0;
   padding: 0;
@@ -8,6 +10,10 @@ body{
   font-family: $font-family;
   background: $white;
   min-height: 100vh;
+  overflow-x: hidden;
   @include flex(column, flex-start);
 
+  @include respond-to(large){
+    justify-content: center;
+  }
 }

@@ -18,11 +18,17 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   background: hsl(0, 0%, 100%);
   min-height: 100vh;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: unset;
   align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    justify-content: center;
+  }
 }
 
 section.results {
@@ -31,21 +37,26 @@ section.results {
 section.results > p {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #f5ffeb;
+  color: hsl(221, 100%, 96%);
   opacity: 0.6;
+}
+@media only screen and (min-width: 768px) {
+  section.results > p {
+    font-size: 1.1rem;
+  }
 }
 
 div.circle p:first-child {
   font-size: 3.375rem;
   font-weight: 600;
-  color: hsl(0, 0%, 100%);
+  color: hsl(221, 100%, 96%);
   opacity: 1;
 }
 div.circle p:last-child {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #F9F0FF;
-  opacity: 0.3;
+  color: hsl(241, 100%, 89%);
+  opacity: 0.4;
 }
 
 div.analysis p:first-child {
@@ -54,33 +65,49 @@ div.analysis p:first-child {
   color: hsl(0, 0%, 100%);
   opacity: 1;
 }
+@media only screen and (min-width: 768px) {
+  div.analysis p:first-child {
+    font-size: 1.75rem;
+  }
+}
 div.analysis p:last-child {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   color: hsl(0, 0%, 100%);
   opacity: 0.65;
   letter-spacing: 0.54px;
+}
+@media only screen and (min-width: 768px) {
+  div.analysis p:last-child {
+    font-size: 0.9rem;
+    opacity: 0.55;
+  }
 }
 
 section.summary p:first-child {
   font-size: 1rem;
   font-weight: 700;
-  color: #353541;
+  color: hsl(224, 30%, 27%);
   opacity: 1;
   text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  section.summary p:first-child {
+    font-size: 1.25rem;
+  }
 }
 
 div.percentage b {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #353541;
+  color: hsl(224, 30%, 27%);
   opacity: 1;
 }
 div.percentage span {
   font-size: 0.9rem;
   font-weight: 700;
   color: #A5A5A5;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 button[type=button] {
@@ -138,22 +165,32 @@ section.results, main.wrapper {
 }
 
 main.wrapper {
+  box-shadow: 20px 25px 25px 0px hsl(221, 100%, 96%);
   min-width: 100vw;
   width: 375px;
-  box-shadow: 20px 25px 35px 0px hsla(225, 77%, 95%, 0.85);
+}
+@media only screen and (min-width: 768px) {
+  main.wrapper {
+    min-width: 375px;
+    width: 764px;
+    height: 515px;
+    flex-direction: row;
+    border-radius: 35px;
+  }
 }
 
 section.results {
-  background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
+  background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
   flex-shrink: 0;
   border-radius: 0 0 35px 35px;
   padding-top: 23.5px;
 }
-section.results > p {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #f5ffeb;
-  opacity: 0.6;
+@media only screen and (min-width: 768px) {
+  section.results {
+    max-width: 364px;
+    height: 515px;
+    border-radius: 35px;
+  }
 }
 section.results div.circle {
   display: flex;
@@ -163,13 +200,23 @@ section.results div.circle {
   align-items: center;
   border-radius: 50%;
   padding: 30px 45px 30px 45px;
-  background: linear-gradient(180deg, #4923D0 0%, #4633EF 100%);
+  background: linear-gradient(180deg, hsl(256, 72%, 46%) 0%, hsla(241, 72%, 46%, 0) 100%);
+}
+@media only screen and (min-width: 768px) {
+  section.results div.circle {
+    scale: 1.05;
+  }
 }
 section.results div.analysis {
   padding: 0 43px 53px;
 }
 section.results div.analysis p:first-child {
   margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  section.results div.analysis p:first-child {
+    margin-bottom: 5px;
+  }
 }
 
 section.summary {
@@ -182,6 +229,11 @@ section.summary {
   padding-bottom: 37px;
   margin: 0 27.5px;
 }
+@media only screen and (min-width: 768px) {
+  section.summary {
+    margin: 0 30px 0 0px;
+  }
+}
 div.cards {
   display: flex;
   flex-direction: column;
@@ -192,18 +244,26 @@ div.cards {
 
 div.summaryCard:nth-child(1) {
   background-color: #FFF5F5;
+  color: hsl(0, 100%, 67%);
+  font-weight: 600;
 }
 
 div.summaryCard:nth-child(2) {
   background-color: #FFFBF2;
+  color: hsl(39, 100%, 56%);
+  font-weight: 600;
 }
 
 div.summaryCard:nth-child(3) {
   background-color: #F2FBFA;
+  color: hsl(166, 100%, 37%);
+  font-weight: 600;
 }
 
 div.summaryCard:nth-child(4) {
   background-color: #F3F3FD;
+  color: hsl(234, 85%, 45%);
+  font-weight: 600;
 }
 
 div.summaryTitle {
@@ -241,5 +301,5 @@ button[type=button]:hover {
   cursor: pointer;
 }
 button[type=button]:hover {
-  background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
+  background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
 }/*# sourceMappingURL=styles.css.map */

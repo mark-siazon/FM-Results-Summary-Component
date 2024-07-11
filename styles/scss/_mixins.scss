@@ -43,7 +43,9 @@
   border-radius: 10px;
 }
 
-@mixin comp--summary-card($background-color:$white){
+@mixin comp--summary-card($background-color:$white, $text-color:$white){
   @extend %summary-card-base;
   background-color: $background-color;
+  color: $text-color;
+  font-weight: 600;
 }
