@@ -1,0 +1,245 @@
+div.summaryCard:nth-child(4), div.summaryCard:nth-child(3), div.summaryCard:nth-child(2), div.summaryCard:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: unset;
+  align-items: center;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background: hsl(0, 0%, 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: unset;
+  align-items: center;
+}
+
+section.results {
+  color: white;
+}
+section.results > p {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f5ffeb;
+  opacity: 0.6;
+}
+
+div.circle p:first-child {
+  font-size: 3.375rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  opacity: 1;
+}
+div.circle p:last-child {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #F9F0FF;
+  opacity: 0.3;
+}
+
+div.analysis p:first-child {
+  font-size: 2.125rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  opacity: 1;
+}
+div.analysis p:last-child {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  opacity: 0.65;
+  letter-spacing: 0.54px;
+}
+
+section.summary p:first-child {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #353541;
+  opacity: 1;
+  text-align: left;
+}
+
+div.percentage b {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #353541;
+  opacity: 1;
+}
+div.percentage span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #A5A5A5;
+  opacity: 1;
+}
+
+button[type=button] {
+  font-size: 0.9rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.d-none {
+  display: none;
+}
+
+button[type=button], section.results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+button[type=button], div.cards, section.summary p:first-child, section.summary, section.results, div.summaryCard:nth-child(4), div.summaryCard:nth-child(3), div.summaryCard:nth-child(2), div.summaryCard:nth-child(1) {
+  align-self: stretch;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+section.results, div.analysis p:first-child, div.analysis p:last-child {
+  text-align: center;
+}
+
+section.results, main.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+section.results, main.wrapper {
+  height: fit-content;
+}
+
+main.wrapper {
+  min-width: 100vw;
+  width: 375px;
+  box-shadow: 20px 25px 35px 0px hsla(225, 77%, 95%, 0.85);
+}
+
+section.results {
+  background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
+  flex-shrink: 0;
+  border-radius: 0 0 35px 35px;
+  padding-top: 23.5px;
+}
+section.results > p {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f5ffeb;
+  opacity: 0.6;
+}
+section.results div.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0;
+  align-items: center;
+  border-radius: 50%;
+  padding: 30px 45px 30px 45px;
+  background: linear-gradient(180deg, #4923D0 0%, #4633EF 100%);
+}
+section.results div.analysis {
+  padding: 0 43px 53px;
+}
+section.results div.analysis p:first-child {
+  margin-bottom: 16px;
+}
+
+section.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  min-width: 320px;
+  padding-bottom: 37px;
+  margin: 0 27.5px;
+}
+div.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+div.summaryCard:nth-child(1) {
+  background-color: #FFF5F5;
+}
+
+div.summaryCard:nth-child(2) {
+  background-color: #FFFBF2;
+}
+
+div.summaryCard:nth-child(3) {
+  background-color: #F2FBFA;
+}
+
+div.summaryCard:nth-child(4) {
+  background-color: #F3F3FD;
+}
+
+div.summaryTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  opacity: 0.8;
+}
+
+div.percentage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3px;
+  align-items: center;
+  height: 16px;
+}
+
+button[type=button] {
+  background: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 1rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: opacity 0.3s;
+  height: 56px;
+  padding: 19px 0px;
+  gap: 10px;
+}
+button[type=button]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+button[type=button]:hover {
+  background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
+}/*# sourceMappingURL=styles.css.map */

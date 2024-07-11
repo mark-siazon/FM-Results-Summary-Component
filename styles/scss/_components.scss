@@ -1,0 +1,88 @@
+main.wrapper{
+  @extend %flex-normal-sm;
+  @extend %height-fit-content;
+  min-width: 100vw;
+  width: 375px;
+  box-shadow: 20px 25px 35px 0px hsla(225, 77%, 95%, 0.85);
+}
+
+section.results{
+  @include bg-gradient(#6743FF,#312CEA);
+  @extend %flex-normal-sm;
+  @extend %flex-center;
+  @extend %align-self-stretch;
+  @extend %height-fit-content;
+  flex-shrink: 0;
+
+  border-radius: 0 0 35px 35px;
+  padding-top: 23.5px;
+  
+  > p{
+    @include font-styles(.95rem, 700, #f5ffeb, 0.6)
+  }
+
+  div.circle{
+    @include flex(column, flex-end, 0);
+    border-radius: 50%;
+    padding: 30px 45px 30px 45px;
+    @include bg-gradient(#4923D0,#4633EF);
+  }
+
+  div.analysis{
+    padding: 0 43px 53px;
+
+    p:first-child{
+      margin-bottom: 16px;
+    }
+  }
+}
+
+section.summary{
+  @include flex(column, center, 25px);
+  @extend %align-self-stretch;
+
+  min-width: 320px;
+  padding-bottom: 37px;
+  margin: 0 27.5px;
+  
+  p:first-child{
+    @extend %align-self-stretch;
+  }
+}
+
+
+div.cards{
+  @include flex(column, center, 16px);
+  @extend %align-self-stretch;
+}
+
+@for $i from 1 through length($background-colors){
+  div.summaryCard:nth-child(#{$i}){
+    @include comp--summary-card(nth($background-colors,$i));
+  } // Loop through the bg-color of each card w/ :nth-child()
+}
+
+div.summaryTitle{
+  @include flex(row, space-between, 10px);
+  opacity: 0.8;
+}
+
+div.percentage{
+  @include flex(row, space-between, 3px);
+  height: 16px;
+}
+
+
+button[type="button"]{
+  @include button-styles($dark-gray-blue,$white);
+  @extend %flex-center;
+  @extend %align-self-stretch;
+
+  height: 56px;
+  padding: 19px 0px;
+  gap: 10px;
+
+  &:hover{
+    @include bg-gradient(#6743FF,#312CEA);
+  }
+}

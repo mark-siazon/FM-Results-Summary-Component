@@ -1,0 +1,37 @@
+section.results{
+  @extend %text-center;
+  color: rgba($color: $white, $alpha: 1.0);
+  > p { @include font-styles(.95rem, 700, #f5ffeb, 0.6) }
+}
+
+div.circle{
+  p:first-child{ @include font-styles(3.375rem, 600, $white); }
+  p:last-child{ @include font-styles(0.95rem, 600, #F9F0FF, 0.3);}
+}
+
+div.analysis{
+  p:first-child{
+    @include font-styles(2.125rem, 600, $white, 1);
+    @extend %text-center;
+  }
+
+  p:last-child{
+    @include font-styles(1rem, 600, $white, 0.65);
+    @extend %text-center;
+    letter-spacing: 0.54px;
+  }
+}
+
+section.summary{
+  p:first-child{
+    @include font-styles(1rem, 700, #353541, 1);
+    text-align: left;
+  }  
+}
+
+div.percentage{
+  b { @include font-styles(0.9rem, 700, #353541, 1); }
+  span { @include font-styles(0.9rem, 700, #A5A5A5, 1); }
+}
+
+button[type="button"]{ font-size: 0.9rem; }
