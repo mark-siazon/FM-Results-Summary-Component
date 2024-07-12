@@ -42,7 +42,8 @@ section.results > p {
 }
 @media only screen and (min-width: 768px) {
   section.results > p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    margin-bottom: 4px;
   }
 }
 
@@ -79,8 +80,8 @@ div.analysis p:last-child {
 }
 @media only screen and (min-width: 768px) {
   div.analysis p:last-child {
-    font-size: 0.97rem;
-    opacity: 0.55;
+    font-size: 1.125rem;
+    opacity: 0.5;
   }
 }
 
@@ -115,38 +116,14 @@ button[type=button] {
   font-size: 0.9rem;
 }
 
-.m-1 {
-  margin: 1rem;
-}
-
-.p-2 {
-  padding: 2rem;
-}
-
-.d-none {
-  display: none;
-}
-
 button[type=button], section.results {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.align-items-start {
-  align-items: flex-start;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
 button[type=button], div.cards, section.summary p:first-child, section.summary, section.results, div.summaryCard:nth-child(4), div.summaryCard:nth-child(3), div.summaryCard:nth-child(2), div.summaryCard:nth-child(1) {
   align-self: stretch;
-}
-
-.justify-content-center {
-  justify-content: center;
 }
 
 section.results, div.analysis p:first-child, div.analysis p:last-child {
@@ -205,8 +182,8 @@ section.results div.circle {
 }
 @media only screen and (min-width: 768px) {
   section.results div.circle {
-    scale: 1.1;
-    margin: 5px 0 0;
+    scale: 1.2;
+    margin-bottom: 10px;
   }
 }
 section.results div.analysis {
@@ -217,7 +194,7 @@ section.results div.analysis p:first-child {
 }
 @media only screen and (min-width: 768px) {
   section.results div.analysis p:first-child {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 }
 
