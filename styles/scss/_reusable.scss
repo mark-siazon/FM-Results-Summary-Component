@@ -1,29 +1,8 @@
-////////// - Margin & Padding Utilities - //////////
-.m-1 {
-  margin: 1rem;
-}
-.p-2 {
-  padding: 2rem;
-}
-
-////////// - Display Utilities - //////////
-.d-none {
-  display: none;
-}
-
 ////////// - Flexbox Utilities - //////////
 %flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.align-items-start {
-  align-items: flex-start;
-}
-
-.align-items-center {
-  align-items: center;
 }
 
 %align-items-stretch {
@@ -32,10 +11,6 @@
 
 %align-self-stretch {
   align-self: stretch;
-}
-
-.justify-content-center {
-  justify-content: center;
 }
 
 ////////// - Text Utilities - //////////
